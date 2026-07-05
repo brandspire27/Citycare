@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="boook-apoint.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Book an Appointment</h1>
+        <p>Fill in the form below to schedule your appointment with our experienced doctors.</p>
+
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700" alt="Hospital">
+    </div>
+
+    <div class="right">
+
+        <form id="appointmentForm">
+
+            <h2>Appointment Form</h2>
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <select id="doctor" required>
+                <option value="">Select Doctor</option>
+                <option>Cardiologist</option>
+                <option>Neurologist</option>
+                <option>Orthopedic</option>
+                <option>Dermatologist</option>
+                <option>Pediatrician</option>
+            </select>
+
+            <input type="date" id="date" required>
+
+            <input type="time" id="time" required>
+
+            <textarea id="problem" rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Book Appointment</button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="book-apoint.js"></script>
+
+</body>
+</html> 
+</body>
+</html>

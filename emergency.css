@@ -1,0 +1,213 @@
+.emergency{
+
+    width:100%;
+    min-height:90vh;
+
+    background:url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,40,90,.82);
+
+}
+
+.emergency-content{
+
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:1300px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.emergency-left{
+
+    color:white;
+    flex:1;
+
+}
+
+.tag{
+
+    background:#ff3d3d;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.emergency-left h1{
+
+    margin-top:25px;
+    font-size:58px;
+
+}
+
+.emergency-left h2{
+
+    font-size:40px;
+    margin:15px 0;
+    color:#6fd8ff;
+
+}
+
+.emergency-left p{
+
+    font-size:18px;
+    line-height:1.9;
+    max-width:600px;
+
+}
+
+.btns{
+
+    margin-top:35px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.call,
+.book{
+
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.4s;
+
+}
+
+.call{
+
+    background:#ff3b3b;
+    color:white;
+
+}
+
+.book{
+
+    background:white;
+    color:#0055aa;
+
+}
+
+.call:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(255,0,0,.4);
+
+}
+
+.book:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.emergency-right{
+
+    flex:1;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    color:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    font-size:45px;
+
+}
+
+.card h3{
+
+    margin:15px 0;
+    font-size:24px;
+
+}
+
+.card p{
+
+    color:#ddd;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.05);
+
+    background:#00aaff;
+
+}
+
+@media(max-width:900px){
+
+.emergency-content{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.emergency-left h1{
+
+font-size:42px;
+
+}
+
+.emergency-left h2{
+
+font-size:28px;
+
+}
+
+.emergency-right{
+
+grid-template-columns:1fr;
+
+width:100%;
+
+}
+
+}
